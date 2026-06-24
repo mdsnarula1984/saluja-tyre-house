@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://www.salujatyres.in/sitemap.xml
