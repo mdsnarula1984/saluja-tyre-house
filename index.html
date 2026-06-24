@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Saluja Tyre House | Premium Tyres, 3D Wheel Alignment & Balancing in Raebareli</title>
+    <meta name="description"
+        content="Raebareli's premier premium tyre dealer & wheel care clinic. Authorized Bridgestone, Michelin, Yokohama, Continental, Apollo, CEAT & JK Tyre store in Feroz Gandhi Nagar. 4.9★ Google Rated with 1100+ Reviews.">
+    <meta name="keywords"
+        content="Tyre Shop in Raebareli, Best Tyre Dealer in Raebareli, Wheel Alignment in Raebareli, Wheel Balancing in Raebareli, Bridgestone Tyres Raebareli, Car Tyres in Raebareli, SUV Tyres in Raebareli, Alloy Wheels in Raebareli, Tyre Repair in Raebareli, Premium Tyres in Raebareli">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Saluja Tyre House | Best Premium Tyre Shop in Raebareli">
+    <meta property="og:description"
+        content="Looking for premium car tyres or expert 3D Wheel Alignment & Balancing in Raebareli? Authorized dealer with 4.9★ Google Rating & 1100+ reviews.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salujatyrehouse.com">
+    <meta property="og:image" content="./assets/shop.jpeg">
+
+    <!-- Premium Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navyAccent: '#0B132B',      /* Deep Navy */
+                        navyDark: '#1C2541',        /* Dark Blue */
+                        autoBlue: '#2563EB',        /* High Velocity Blue */
+                        autoBlueLight: '#DBEAFE',   /* Light Highlight Blue */
+                        slateSoft: '#F8FAFC',       /* Premium Soft Grey */
+                        slateDeep: '#64748B',       /* Subtle Gray-Blue Text */
+                    },
+                    boxShadow: {
+                        premium: '0 10px 30px -5px rgba(11, 19, 43, 0.05)',
+                        premiumHover: '0 20px 40px -5px rgba(37, 99, 235, 0.12)',
+                        cinematic: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #1E293B;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Transparent Header State over Cinematic Hero */
+        .glass-header.transparent {
+            background: rgba(11, 19, 43, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-header.transparent nav a {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .glass-header.transparent nav a:hover {
+            color: #FFFFFF;
+        }
+
+        .glass-header.transparent .branding-text {
+            color: #FFFFFF !important;
+        }
+
+        /* Interactive Card Hover Transitions */
+        .premium-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(15, 23, 42, 0.05);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(37, 99, 235, 0.25);
+            box-shadow: 0 20px 40px -10px rgba(11, 19, 43, 0.08);
+        }
+
+        /* Custom Scrollbar for Luxury Aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 9999px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563EB;
+        }
+
+        /* Pulsing Animated Rings for Cinema Button */
+        @keyframes custom-ping {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            70% {
+                transform: scale(1.6);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1.6);
+                opacity: 0;
+            }
+        }
+
+        .pulse-ring {
+            animation: custom-ping 2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        }
+
+        /* Smooth Infinite Marquee Logo Wall */
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            user-select: none;
+            display: flex;
+            width: 100%;
+            mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+        }
+
+        .marquee-content {
+            display: flex;
+            gap: 1.5rem;
+            animation: marquee 28s linear infinite;
+            width: max-content;
+            padding: 0.5rem 0;
+        }
+
+        .marquee-content:hover {
+            animation-play-state: paused;
+        }
+
+        .marquee-card {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 210px;
+            height: 76px;
+            background: #F8FAFC;
+            border: 1px solid rgba(15, 23, 42, 0.05);
+            border-radius: 0.75rem;
+            padding: 1rem 1.25rem;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .marquee-card:hover {
+            border-color: rgba(37, 99, 235, 0.25);
+            background: #FFFFFF;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px -10px rgba(11, 19, 43, 0.08);
+        }
+    </style>
+
+    <!-- Schema Markup: Structured Local Business Data for Dominated SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Saluja Tyre House",
+      "image": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&q=80&w=800",
+      "telephone": "+919415155394",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hari Kripa Tower, BSNL Office Road, beside Rajasthan Sweets, Feroz Gandhi Nagar",
+        "addressLocality": "Raebareli",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "229001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.2235,
+        "longitude": 81.2427
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1100"
+      }
+    }
+    </script>
+</head>
+
+<body class="antialiased selection:bg-autoBlue selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header transparent" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#hero" class="flex items-center space-x-3 group">
+                    <div
+                        class="relative h-12 w-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105 overflow-hidden">
+                        <img src="assets/logo.jpeg" alt="Saluja Logo" class="h-full w-full object-contain" />
+                    </div>
+                    <div>
+                        <span
+                            class="font-display text-xl font-extrabold tracking-tight block text-white branding-text leading-none transition-colors duration-300">SALUJA</span>
+                        <span class="text-[9px] uppercase tracking-[0.25em] text-autoBlue font-black block mt-0.5">TYRE
+                            HOUSE</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex space-x-8 font-display text-xs uppercase tracking-widest font-bold">
+                    <a href="#about" class="text-slate-300 hover:text-white transition-colors duration-300">About Us</a>
+                    <a href="#services"
+                        class="text-slate-300 hover:text-white transition-colors duration-300">Services</a>
+                    <a href="#vehicles" class="text-slate-300 hover:text-white transition-colors duration-300">By
+                        Vehicle</a>
+                    <a href="#hub" class="text-slate-300 hover:text-white transition-colors duration-300">Knowledge
+                        Hub</a>
+                    <a href="#alloys" class="text-slate-300 hover:text-white transition-colors duration-300">Alloys
+                        Guide</a>
+                    <a href="#why-choose-us" class="text-slate-300 hover:text-white transition-colors duration-300">Why
+                        Saluja</a>
+                    <a href="#reviews"
+                        class="text-slate-300 hover:text-white transition-colors duration-300">Reviews</a>
+                    <a href="#gallery"
+                        class="text-slate-300 hover:text-white transition-colors duration-300">Gallery</a>
+                </nav>
+
+                <!-- Desktop Direct Action CTAs -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:+919415155394" id="nav-phone-link"
+                        class="text-white hover:text-autoBlue text-sm font-semibold tracking-wide transition-colors duration-300 flex items-center space-x-2">
+                        <div
+                            class="h-8 w-8 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                            <i class="fa-solid fa-phone text-white text-xs"></i>
+                        </div>
+                        <span class="text-xs font-bold font-display tracking-widest">+91 94151 55394</span>
+                    </a>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I%27m%20visiting%20your%20website%20and%20looking%20for%20premium%20tyres."
+                        target="_blank"
+                        class="bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-5 py-3 rounded-xl transition-all duration-300 shadow-md shadow-autoBlue/10 flex items-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Enquire Now</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-toggle" type="button"
+                        class="p-2 text-white hover:text-autoBlue focus:outline-none transition-colors"
+                        aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars-staggered text-2xl" id="menu-burger"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dynamic Menu Frame -->
+        <div class="hidden lg:hidden bg-navyAccent border-t border-white/10" id="mobile-drawer">
+            <div class="px-4 pt-4 pb-6 space-y-3 font-display text-center text-xs tracking-widest uppercase">
+                <a href="#about" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">About Us</a>
+                <a href="#services" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">Services</a>
+                <a href="#vehicles" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">By
+                    Vehicle</a>
+                <a href="#hub" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">Knowledge
+                    Hub</a>
+                <a href="#alloys" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">Alloys
+                    Guide</a>
+                <a href="#why-choose-us" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">Why
+                    Saluja</a>
+                <a href="#reviews" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold border-b border-white/5">Reviews</a>
+                <a href="#gallery" onclick="toggleMobileDrawer()"
+                    class="block py-2.5 text-slate-300 hover:text-white font-bold">Gallery</a>
+
+                <div class="pt-4 flex flex-col space-y-3">
+                    <a href="tel:+919415155394"
+                        class="bg-white/10 border border-white/20 hover:bg-white/20 text-white font-bold py-3.5 px-4 rounded-xl tracking-wider flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-phone text-autoBlue"></i>
+                        <span>Call: +91 94151 55394</span>
+                    </a>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I%20want%20to%20get%20pricing%20details."
+                        target="_blank"
+                        class="bg-autoBlue hover:bg-navyDark text-white py-3.5 px-4 rounded-xl font-extrabold tracking-wider flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Quick Chat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1 — PREMIUM CINEMATIC HERO SECTION -->
+    <section id="hero"
+        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-navyAccent pt-20">
+
+        <!-- HTML5 Loop Background Video (Smooth, Muted, Cinematic) -->
+        <div class="absolute inset-0 w-full h-full object-cover z-0 overflow-hidden pointer-events-none">
+            <!-- Replace the source URL below with your actual professional self-hosted .mp4 video if desired -->
+            <video id="bg-loop-video" autoplay loop muted playsinline poster="assets/hero.png"
+                class="w-full h-full object-cover scale-[1.03]">
+                <source src="assets/topad.mp4" type="video/mp4">
+            </video>
+            <!-- Heavy Dark Cinematic Overlay Gradient for High Legibility & Premium Styling -->
+            <div class="absolute inset-0 bg-gradient-to-t from-navyAccent via-navyAccent/40 to-navyAccent/70"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 sm:py-24 text-center">
+            <div class="max-w-4xl mx-auto space-y-10">
+
+                <!-- Google Rating Pill with Neon Hint -->
+                <div
+                    class="inline-flex items-center space-x-2.5 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full shadow-lg transition-transform hover:scale-105 pointer-events-none">
+                    <div class="flex items-center text-amber-400 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                    </div>
+                    <span class="text-xs text-white font-extrabold font-display tracking-wider">4.9 Google Rating</span>
+                    <span class="text-white/30">|</span>
+                    <span class="text-xs text-slate-300 font-semibold">1,100+ Verified Customer Reviews</span>
+                </div>
+
+                <!-- Main Dramatic Headline -->
+                <h1
+                    class="font-display text-4xl sm:text-7xl font-extrabold text-white leading-[1.05] tracking-tight uppercase">
+                    Raebareli's Trusted <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-200 to-white">Premium
+                        Tyres & Wheel Care</span>
+                </h1>
+
+                <!-- Premium Subheadline -->
+                <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                    4.9★ Rated by 1100+ Customers | Genuine Tyres | Wheel Alignment | Wheel Balancing | Expert Service
+                </p>
+
+                <!-- Cinematic Core Action Controls -->
+                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center pt-4">
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20premium%20tyres/services%20for%20my%20vehicle."
+                        target="_blank"
+                        class="w-full sm:w-auto bg-autoBlue hover:bg-blue-600 text-white font-display text-xs uppercase tracking-widest font-extrabold px-10 py-5 rounded-xl transition-all shadow-xl shadow-autoBlue/30 hover:-translate-y-1 flex items-center justify-center space-x-3">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+
+                    <a href="tel:+919415155394"
+                        class="w-full sm:w-auto bg-white hover:bg-slate-100 text-navyAccent font-display text-xs uppercase tracking-widest font-extrabold px-10 py-5 rounded-xl transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-phone text-autoBlue"></i>
+                        <span>Call +91 94151 55394</span>
+                    </a>
+                </div>
+
+                <!-- Premium Cinema Interactive Trigger Block -->
+                <div class="pt-8">
+                    <button id="open-cinematic-trigger"
+                        class="group inline-flex items-center space-x-4 bg-white/10 hover:bg-white/15 border border-white/20 pl-4 pr-6 py-3.5 rounded-full backdrop-blur-md text-white transition-all duration-300 focus:outline-none hover:border-white/40">
+                        <div
+                            class="relative h-11 w-11 flex items-center justify-center bg-autoBlue rounded-full text-white shadow-lg shadow-autoBlue/20">
+                            <!-- Dual Pulsing background ring system -->
+                            <div class="absolute inset-0 rounded-full bg-autoBlue pulse-ring"></div>
+                            <i class="fa-solid fa-play text-xs ml-1"></i>
+                        </div>
+                        <div class="text-left">
+                            <span
+                                class="block text-[10px] uppercase tracking-[0.2em] font-extrabold text-blue-400">Official
+                                Presentation</span>
+                            <span class="block text-xs font-bold tracking-wide">Play Commercial Video</span>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Trust badge row inside cinematic grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-white/10 max-w-3xl mx-auto">
+                    <div class="flex items-center justify-center space-x-2 text-white">
+                        <i class="fa-solid fa-circle-check text-autoBlue text-sm"></i>
+                        <span class="text-xs font-bold tracking-widest uppercase">1100+ Reviews</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2 text-white">
+                        <i class="fa-solid fa-shield text-autoBlue text-sm"></i>
+                        <span class="text-xs font-bold tracking-widest uppercase">Genuine Products</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2 text-white">
+                        <i class="fa-solid fa-screwdriver-wrench text-autoBlue text-sm"></i>
+                        <span class="text-xs font-bold tracking-widest uppercase">Pro Equipment</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2 text-white">
+                        <i class="fa-solid fa-map-location-dot text-autoBlue text-sm"></i>
+                        <span class="text-xs font-bold tracking-widest uppercase">Trusted Locally</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll down visual prompt -->
+        <div
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center space-y-2 text-white/50 pointer-events-none">
+            <span class="text-[9px] uppercase tracking-[0.3em] font-extrabold">Discover More</span>
+            <div class="h-8 w-5 border-2 border-white/20 rounded-full flex justify-center p-1">
+                <div class="h-2 w-1.5 bg-autoBlue rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMMERSIVE FULL-SCREEN CINEMATIC MODAL PLAYER -->
+    <div id="cinematic-modal"
+        class="fixed inset-0 z-[100] bg-navyAccent/98 backdrop-blur-xl flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-500">
+
+        <!-- Immersive Theater Frame -->
+        <div
+            class="relative w-full max-w-5xl bg-black rounded-3xl overflow-hidden shadow-cinematic border border-white/10 flex flex-col">
+
+            <!-- Modal Cinematic Header Controls -->
+            <div
+                class="flex justify-between items-center px-6 py-4 bg-gradient-to-b from-black/80 to-transparent absolute top-0 left-0 right-0 z-10">
+                <div class="flex items-center space-x-3">
+                    <div class="h-9 w-9 bg-autoBlue rounded-xl flex items-center justify-center text-white text-xs">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase font-extrabold tracking-[0.2em] text-white block">Saluja Tyre
+                            House</span>
+                        <span class="text-[9px] font-bold text-blue-400 uppercase tracking-widest block">Cinematic
+                            Experience Reel</span>
+                    </div>
+                </div>
+                <button id="close-cinematic-trigger"
+                    class="h-10 w-10 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center transition-colors focus:outline-none">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Immersive Video Player Target Container -->
+            <div class="relative aspect-video w-full bg-black">
+                <!-- Direct loop player equipped with audio control for the custom professional film -->
+                <video id="cinematic-player" preload="auto" controls class="w-full h-full object-contain">
+                    <source src="assets/ad.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video playing capability.
+                </video>
+            </div>
+
+            <!-- Modal Bottom Branding Bar -->
+            <div
+                class="bg-black/90 px-8 py-5 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+                <div>
+                    <h4 class="text-sm font-bold text-white font-display">Experience Precision At Saluja Tyre House</h4>
+                    <p class="text-slate-400 text-xs mt-0.5">Explore our state-of-the-art facility located in Feroz
+                        Gandhi Nagar, Raebareli.</p>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20impressed%20by%20your%20cinematic%20reel%20and%20want%20to%20get%20pricing%20details."
+                        target="_blank"
+                        class="bg-autoBlue hover:bg-blue-600 text-white text-[10px] uppercase tracking-wider font-extrabold px-5 py-3 rounded-xl transition-colors flex items-center space-x-2">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Enquire Availability</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRAND WALL SECTION -->
+    <section class="py-14 bg-white border-y border-slate-100 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="font-display text-xs tracking-[0.2em] font-extrabold uppercase text-slateDeep mb-8">Trusted Tyre
+                Brands Available</h3>
+
+            <!-- Infinite Scroll Wrapper -->
+            <div class="marquee-container">
+                <div class="marquee-content">
+
+                    <!-- 1. BRIDGESTONE -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-rose-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M2,2 L14,2 L11,22 L2,22 Z M15,2 L22,6 L18,13 L15,13 L17,8 L13,8 L11,13 L8,13 Z M7,6 L9,6 L7.5,18 L5.5,18 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">BRIDGESTONE</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Dealer
+                                    Store</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. MICHELIN -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-7 w-7 fill-current text-navyAccent group-hover:text-blue-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2A3,3 0 0,1 15,5C15,5.74 14.73,6.42 14.28,6.95C16.5,7.5 18,9.08 18,11C18,11.5 17.5,12 17,12C16.5,12 16,11.5 16,11C16,9.9 14.2,9 12,9C9.8,9 8,9.9 8,11C8,11.5 7.5,12 7,12C6.5,12 6,11.5 6,11C6,9.08 7.5,7.5 9.72,6.95C9.27,6.42 9,5.74 9,5A3,3 0 0,1 12,2M12,4A1,1 0 0,0 11,5A1,1 0 0,0 12,6A1,1 0 0,0 13,5A1,1 0 0,0 12,4M5,14C5,13.4 5.4,13 6,13H18C18.6,13 19,13.4 19,14C19,15.5 17,17 14,17.3V19H16C16.6,19 17,19.4 17,20C17,20.6 16.6,21 16,21H8C7.4,21 7,20.6 7,20C7,19.4 7.4,19 8,19H10V17.3C7,17 5,15.5 5,14Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">MICHELIN</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Official
+                                    Partner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. YOKOHAMA -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-red-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M3,3 L8,3 L12,11 L16,3 L21,3 L14,14 L14,21 L10,21 L10,14 Z M4,6 L6,6 L10,13 L10,15 Z M20,6 L18,6 L14,13 L14,15 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">YOKOHAMA</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Premium
+                                    Sport</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. CONTINENTAL -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-7 w-7 fill-current text-navyAccent group-hover:text-amber-500 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13.5,7C14,8.5 13.5,9.5 12,10.5C11.5,10 11.2,9.2 11.5,8C11.8,6.8 12.8,6.5 13.5,7M10,11C11.5,12 12,13 11,15C10.5,16 9.8,17 9.5,18C9,17 9,15.5 9.5,14.5C10,13.5 10.2,12.5 10,11M15,11.5C16,13 15.5,14.5 14,16C13.5,15 13,14.5 13.5,13.5C14,12.5 14.5,12 15,11.5Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">CONTINENTAL</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">German
+                                    Tech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. GOODYEAR -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-amber-400 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M3,12 C4.5,9 7,8 9.5,8 C9.5,8 10,6.5 11,6.5 C12,6.5 11.5,8.5 13,8.5 C14.5,8.5 15,7 16,7 C17,7 16.5,9 18.5,9.5 C20.5,10 21,11 21,12 C21,13 19.5,14 17,14 C14.5,14 13.5,12.5 11.5,12.5 C9.5,12.5 9,14 6,14 C3,14 3,12 3,12 Z M8,10 C7,10 6.5,11 6.5,11.5 C6.5,12 7,12.5 8,12.5 C9,12.5 9.5,12 9.5,11.5 C9.5,11 9,10 8,10 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">GOODYEAR</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Direct
+                                    Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. MRF -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-red-700 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path d="M2,4 L8,4 L12,12 L16,4 L22,4 L17,15 L21,20 L15,20 L12,14 L9,20 L3,20 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">MRF
+                                    TYRES</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Certified
+                                    Store</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. APOLLO -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-purple-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <circle cx="9" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="15" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">APOLLO</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Official
+                                    Stockist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. CEAT -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-sky-500 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">CEAT</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Deals
+                                    Center</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. JK TYRE -->
+                    <div class="marquee-card group">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-yellow-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2 L4,5 L4,12 C4,17 8,21 12,22 C16,21 20,17 20,12 L20,5 Z M12,6 C13.5,6 14.8,6.8 14.8,8.2 C14.8,9.5 13,10.8 12,11.2 C11,10.8 9.2,9.5 9.2,8.2 C9.2,6.8 10.5,6 12,6 Z M10,13 H14 L15,17 H9 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">JK
+                                    TYRE</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Platinum
+                                    Dealer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DUPLICATE SET (To ensure perfectly seamless infinite scroll) -->
+                    <!-- 1. BRIDGESTONE (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-rose-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M2,2 L14,2 L11,22 L2,22 Z M15,2 L22,6 L18,13 L15,13 L17,8 L13,8 L11,13 L8,13 Z M7,6 L9,6 L7.5,18 L5.5,18 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">BRIDGESTONE</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Dealer
+                                    Store</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. MICHELIN (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-7 w-7 fill-current text-navyAccent group-hover:text-blue-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2A3,3 0 0,1 15,5C15,5.74 14.73,6.42 14.28,6.95C16.5,7.5 18,9.08 18,11C18,11.5 17.5,12 17,12C16.5,12 16,11.5 16,11C16,9.9 14.2,9 12,9C9.8,9 8,9.9 8,11C8,11.5 7.5,12 7,12C6.5,12 6,11.5 6,11C6,9.08 7.5,7.5 9.72,6.95C9.27,6.42 9,5.74 9,5A3,3 0 0,1 12,2M12,4A1,1 0 0,0 11,5A1,1 0 0,0 12,6A1,1 0 0,0 13,5A1,1 0 0,0 12,4M5,14C5,13.4 5.4,13 6,13H18C18.6,13 19,13.4 19,14C19,15.5 17,17 14,17.3V19H16C16.6,19 17,19.4 17,20C17,20.6 16.6,21 16,21H8C7.4,21 7,20.6 7,20C7,19.4 7.4,19 8,19H10V17.3C7,17 5,15.5 5,14Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">MICHELIN</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Official
+                                    Partner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. YOKOHAMA (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-red-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M3,3 L8,3 L12,11 L16,3 L21,3 L14,14 L14,21 L10,21 L10,14 Z M4,6 L6,6 L10,13 L10,15 Z M20,6 L18,6 L14,13 L14,15 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">YOKOHAMA</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Premium
+                                    Sport</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. CONTINENTAL (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-7 w-7 fill-current text-navyAccent group-hover:text-amber-500 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13.5,7C14,8.5 13.5,9.5 12,10.5C11.5,10 11.2,9.2 11.5,8C11.8,6.8 12.8,6.5 13.5,7M10,11C11.5,12 12,13 11,15C10.5,16 9.8,17 9.5,18C9,17 9,15.5 9.5,14.5C10,13.5 10.2,12.5 10,11M15,11.5C16,13 15.5,14.5 14,16C13.5,15 13,14.5 13.5,13.5C14,12.5 14.5,12 15,11.5Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">CONTINENTAL</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">German
+                                    Tech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. GOODYEAR (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-amber-400 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M3,12 C4.5,9 7,8 9.5,8 C9.5,8 10,6.5 11,6.5 C12,6.5 11.5,8.5 13,8.5 C14.5,8.5 15,7 16,7 C17,7 16.5,9 18.5,9.5 C20.5,10 21,11 21,12 C21,13 19.5,14 17,14 C14.5,14 13.5,12.5 11.5,12.5 C9.5,12.5 9,14 6,14 C3,14 3,12 3,12 Z M8,10 C7,10 6.5,11 6.5,11.5 C6.5,12 7,12.5 8,12.5 C9,12.5 9.5,12 9.5,11.5 C9.5,11 9,10 8,10 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">GOODYEAR</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Direct
+                                    Stock</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. MRF (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-red-700 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path d="M2,4 L8,4 L12,12 L16,4 L22,4 L17,15 L21,20 L15,20 L12,14 L9,20 L3,20 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">MRF
+                                    TYRES</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Certified
+                                    Store</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. APOLLO (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-purple-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <circle cx="9" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="15" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">APOLLO</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Official
+                                    Stockist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. CEAT (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-sky-500 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">CEAT</span>
+                                <span class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Deals
+                                    Center</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. JK TYRE (D) -->
+                    <div class="marquee-card group" aria-hidden="true">
+                        <div class="flex items-center space-x-2 text-left">
+                            <svg class="h-6 w-6 fill-current text-navyAccent group-hover:text-yellow-600 transition-colors duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2 L4,5 L4,12 C4,17 8,21 12,22 C16,21 20,17 20,12 L20,5 Z M12,6 C13.5,6 14.8,6.8 14.8,8.2 C14.8,9.5 13,10.8 12,11.2 C11,10.8 9.2,9.5 9.2,8.2 C9.2,6.8 10.5,6 12,6 Z M10,13 H14 L15,17 H9 Z" />
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-display font-black text-xs tracking-tighter leading-none text-navyAccent group-hover:text-autoBlue transition-colors">JK
+                                    TYRE</span>
+                                <span
+                                    class="text-[7px] uppercase tracking-wider text-slateDeep font-bold mt-0.5">Platinum
+                                    Dealer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 — ABOUT SALUJA TYRE HOUSE -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Visual Left Area -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -inset-1.5 bg-autoBlue/10 rounded-2xl filter blur-lg"></div>
+                    <div class="relative bg-white rounded-2xl overflow-hidden border border-slate-100 p-2 shadow-lg">
+                        <img src="assets/shop.jpeg" alt="Saluja Tyre Store Interior"
+                            class="w-full h-[450px] object-cover rounded-xl">
+                        <div
+                            class="absolute bottom-6 left-6 right-6 p-4 bg-navyAccent text-white rounded-xl shadow-lg border border-white/10 text-left">
+                            <span
+                                class="text-[10px] uppercase font-bold tracking-widest text-autoBlue block mb-1">Uncompromising
+                                Standards</span>
+                            <p class="text-xs text-slate-300">Over 20 Years of trusted local automotive legacy in
+                                Raebareli.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Right Narrative Area -->
+                <div class="lg:col-span-7 space-y-8 text-left">
+                    <div>
+                        <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Who We
+                            Are</span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navyAccent leading-tight">
+                            The Standard of Automotive Wheel Care & Luxury Tyres in Raebareli
+                        </h2>
+                    </div>
+
+                    <div class="text-slateDeep text-sm leading-relaxed space-y-4">
+                        <p>
+                            For over two decades, <strong class="text-navyAccent">Saluja Tyre House</strong> has served
+                            as the gold standard of premium wheel services in Raebareli, Uttar Pradesh. Conveniently
+                            situated in Hari Kripa Tower, Feroz Gandhi Nagar, we carry a strong local reputation based
+                            on absolute honesty, premium product authenticity, and unparalleled customer satisfaction.
+                        </p>
+                        <p>
+                            We view tyres as the singular dynamic point of contact your high-performance automobile
+                            shares with the road. That is why we strictly provide factory-authorized, fresh-batch tyres
+                            fitted with high-precision digital tools. No third-party brokers, no compromised warehouse
+                            lots—just premium quality, direct company warranties, and transparent recommendations.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-slate-100">
+                        <div class="flex items-start space-x-3.5">
+                            <div class="text-autoBlue text-xl mt-1">
+                                <i class="fa-solid fa-stamp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-extrabold text-navyAccent text-sm mb-1">Direct Brand
+                                    Guarantees</h4>
+                                <p class="text-xs text-slateDeep leading-relaxed">Genuine manufacturer barcodes on every
+                                    tyre with instant digital warranty registry.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3.5">
+                            <div class="text-autoBlue text-xl mt-1">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-extrabold text-navyAccent text-sm mb-1">Certified
+                                    Technicians</h4>
+                                <p class="text-xs text-slateDeep leading-relaxed">Our technicians receive regular
+                                    brand-approved certification and structural training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE TYRE FINDER WIDGET -->
+    <section class="py-12 bg-slateSoft border-y border-slate-100 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white rounded-2xl shadow-premium border border-slate-200/60 p-8">
+                <span class="text-autoBlue text-[10px] font-black uppercase tracking-widest block mb-1">Quick Custom
+                    Assistant</span>
+                <h3 class="font-display font-extrabold text-navyAccent text-xl mb-6">Interactive Tyre Stock Finder</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 text-left">
+                    <div>
+                        <label class="block text-[11px] font-bold text-navyAccent uppercase tracking-wider mb-2"
+                            for="finder-vehicle">Vehicle Type</label>
+                        <select id="finder-vehicle"
+                            class="w-full bg-slateSoft border border-slate-200/80 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-autoBlue text-navyAccent">
+                            <option value="Hatchback">Hatchback / Premium Compact</option>
+                            <option value="Sedan">Elegant Executive Sedan</option>
+                            <option value="SUV">High-Performance SUV</option>
+                            <option value="Luxury">Luxury Sports Vehicle</option>
+                            <option value="Commercial">Heavy Commercial Vehicle</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-navyAccent uppercase tracking-wider mb-2"
+                            for="finder-brand">Preferred Tyre Brand</label>
+                        <select id="finder-brand"
+                            class="w-full bg-slateSoft border border-slate-200/80 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-autoBlue text-navyAccent">
+                            <option value="Bridgestone">Bridgestone</option>
+                            <option value="Michelin">Michelin</option>
+                            <option value="Yokohama">Yokohama</option>
+                            <option value="Continental">Continental</option>
+                            <option value="Goodyear">Goodyear</option>
+                            <option value="MRF">MRF</option>
+                            <option value="Apollo">Apollo</option>
+                            <option value="CEAT">CEAT</option>
+                            <option value="JK Tyre">JK Tyre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-navyAccent uppercase tracking-wider mb-2"
+                            for="finder-rim">Estimated Rim Size (Inches)</label>
+                        <select id="finder-rim"
+                            class="w-full bg-slateSoft border border-slate-200/80 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-autoBlue text-navyAccent">
+                            <option value="12">R12 / Smart Hatchback</option>
+                            <option value="13">R13 / Multi-Utility Car</option>
+                            <option value="14">R14 / Premium Hatchback</option>
+                            <option value="15">R15 / Executive Sedan</option>
+                            <option value="16">R16 / Performance Sedan & SUV</option>
+                            <option value="17">R17 / Highway Terrain SUV</option>
+                            <option value="18">R18 / Luxury Sports / Offroad</option>
+                            <option value="19">R19+ / Elite Premium SUV / Sports</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button onclick="triggerTyreFinderInquiry()"
+                    class="w-full sm:w-auto bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-10 py-4.5 rounded-xl transition-all duration-300 shadow-md shadow-autoBlue/20 inline-flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Check Availability & Price via WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — OUR SERVICES -->
+    <section id="services" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Precision
+                    Automotive Solutions</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-navyAccent leading-tight">Our
+                    Professional Services</h2>
+                <p class="text-slateDeep text-sm leading-relaxed mt-4">
+                    Equipped with advanced European laser alignments and sub-gram calibration systems, our clinic
+                    guarantees pristine safety, steering feel, and mileage longevity.
+                </p>
+            </div>
+
+            <!-- Grid of 12 Services -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+
+                <!-- Service 1 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">New Tyres</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Authorized, fresh company batch stock of premium highway comfort, low-noise, and off-road
+                            rugged models.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20inquiring%20about%20New%20Tyres%20availability."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2 group-hover:translate-x-1 transition-transform">
+                        <span>Check Brands</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Wheel Alignment</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Eliminate vehicle lane drift and rapid tire edge wear with computerized 3D laser-guided
+                            geometric corrections.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20to%20get%20a%20Wheel%20Alignment%20quote."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Enquire Alignment</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-arrows-spin"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Wheel Balancing</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Sub-gram level weight distribution fixes steering oscillations and dashboard vibrations felt
+                            at higher highway speeds.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20Wheel%20Balancing%20service."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Get Quote</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Tyre Repair</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            High-durability mushroom-patch repairs executed by skilled personnel to keep tire integrity
+                            structurally completely safe.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20inquiring%20about%20structural%20Tyre%20Repair%20services."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Enquire Now</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-magnet"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Puncture Repair</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Quick zero-damage automatic demounting processes to locate and resolve bead leaks and micro
+                            punctures cleanly.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I%20need%20emergency%20Puncture%20Repair%20details."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Request Service</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Nitrogen Air Filling</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Premium 99% pure nitrogen inflation blocks pressure drops, keeps tyres running cooler, and
+                            maximizes fuel economy.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20coming%20over%20for%20Nitrogen%20filling."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Enquire Nitrogen</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Alloy Wheel Consult</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Complete custom styling and structural guidance to select high-tensile alloy options that
+                            match your car's aesthetic.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I%20want%20to%20consult%20about%20Alloy%20Wheels%2520upgrades."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Get Consult</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Tyre Inspection</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Comprehensive checks for tread separation, casing damage, side-wall bubbles, and
+                            micro-cracking structural indicators.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I%20want%20to%20book%20a%20Tyre%20Inspection."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Book Inspection</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Vehicle Tyre Health Check
+                        </h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Complete vehicle safety diagnostic scans assessing rolling resistance, compound aging, and
+                            tyre temperature indices.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20a%20full%20Tyre%20Health%20Check."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Request Scan</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-truck-monster"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">SUV Tyre Solutions</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Rugged structures designed for rough terrain, thick carcass sidewall overlays, and heavy
+                            all-wheel torque patterns.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20inquiring%20about%20SUV%20Tyres%20options."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Check Options</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 11 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Commercial Tyres</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Heavy load capacity tyres engineered to optimize mileage durability and safe cargo transport
+                            capabilities over long routes.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20inquiring%20about%20Commercial%20Tyres."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Enquire Fleet</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 12 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Premium Car Tyres</h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Ultra low-noise, silent-running rubber formulations offering maximum wet traction grip for
+                            luxury cars and premium sedans.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20interested%20in%20Premium%20Car%20Tyres."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Explore Brands</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 13 -->
+                <div class="premium-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="h-12 w-12 bg-autoBlueLight text-autoBlue flex items-center justify-center rounded-xl mb-6 text-xl">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="font-display font-extrabold text-navyAccent text-base mb-3">Car Wash and Detailing
+                        </h3>
+                        <p class="text-slateDeep text-xs leading-relaxed mb-6">
+                            Professional-grade cleaning and detailing at unbeatable prices.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20interested%20in%20Premium%20Car%20Tyres."
+                        target="_blank"
+                        class="text-xs font-extrabold text-autoBlue hover:text-navyAccent uppercase tracking-wider flex items-center space-x-2">
+                        <span>Explore Brands</span> <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — EXPLORE TYRES BY VEHICLE TYPE -->
+    <section id="vehicles" class="py-24 bg-slateSoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Tailored
+                    Driving Classifications</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navyAccent leading-tight">Explore Tyres
+                    by Vehicle Type</h2>
+                <p class="text-slateDeep text-sm leading-relaxed mt-4">
+                    Every dynamic class of vehicle is built with specific load and speed rating priorities. Explore
+                    expert recommendations curated directly by our certified technicians.
+                </p>
+            </div>
+
+            <!-- Vehicle Interactive Tab Panel -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="switchVehicleTab('tab-cars')" id="btn-tab-cars"
+                    class="vehicle-tab-btn px-6 py-3 bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-navyAccent rounded-xl transition-all shadow-sm active-tab">
+                    <i class="fa-solid fa-car mr-2 text-autoBlue"></i> Cars
+                </button>
+                <button onclick="switchVehicleTab('tab-suvs')" id="btn-tab-suvs"
+                    class="vehicle-tab-btn px-6 py-3 bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-slateDeep rounded-xl transition-all hover:bg-slate-50">
+                    <i class="fa-solid fa-truck-monster mr-2"></i> SUVs
+                </button>
+                <button onclick="switchVehicleTab('tab-sedans')" id="btn-tab-sedans"
+                    class="vehicle-tab-btn px-6 py-3 bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-slateDeep rounded-xl transition-all hover:bg-slate-50">
+                    <i class="fa-solid fa-car-side mr-2"></i> Sedans
+                </button>
+                <button onclick="switchVehicleTab('tab-hatchbacks')" id="btn-tab-hatchbacks"
+                    class="vehicle-tab-btn px-6 py-3 bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-slateDeep rounded-xl transition-all hover:bg-slate-50">
+                    <i class="fa-solid fa-car-rear mr-2"></i> Hatchbacks
+                </button>
+                <button onclick="switchVehicleTab('tab-luxury')" id="btn-tab-luxury"
+                    class="vehicle-tab-btn px-6 py-3 bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-slateDeep rounded-xl transition-all hover:bg-slate-50">
+                    <i class="fa-solid fa-crown mr-2"></i> Luxury
+                </button>
+                <button onclick="switchVehicleTab('tab-commercial')" id="btn-tab-commercial"
+                    class="vehicle-tab-btn px-6 py-3 bg-white border border-slate-200 text-xs font-bold uppercase tracking-wider text-slateDeep rounded-xl transition-all hover:bg-slate-50">
+                    <i class="fa-solid fa-truck mr-2"></i> Commercial
+                </button>
+            </div>
+
+            <!-- Dynamic Tab Contents Display Grid -->
+            <div id="tab-cars"
+                class="vehicle-tab-content bg-white p-8 rounded-2xl shadow-premium border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-left">
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-display font-extrabold text-2xl text-navyAccent">Premium Family & Compact Cars</h3>
+                    <p class="text-slateDeep text-sm leading-relaxed">
+                        For standard city commuting and periodic long road trips, prioritize low-vibration designs
+                        offering a smooth, silent ride. Focus on tyres with reinforced compound structures to ensure
+                        durability and enhanced fuel efficiency over time.
+                    </p>
+                    <ul class="space-y-2 text-xs font-semibold text-slateDeep">
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Recommended Brands: Bridgestone
+                            Sturdo, Michelin XM2+, CEAT SecuraDrive.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Crucial Benefits: High compound
+                            mileage, low rolling friction, silent pavement acoustics.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Estimated Lifetime: 50,000 to
+                            65,000 Kilometers with consistent balancing.</li>
+                    </ul>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20Premium%20Car%20Tyres."
+                        target="_blank"
+                        class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-6 py-3.5 rounded-xl transition-all">Get
+                        Custom Recommendation</a>
+                </div>
+                <div class="lg:col-span-5">
+                    <img src="https://www.carblogindia.com/wp-content/uploads/2022/05/Indian-Cars-South-Africa-13.jpg"
+                        alt="Premium Family Car Tyre Setup" class="rounded-xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Tab 2: SUVs -->
+            <div id="tab-suvs"
+                class="vehicle-tab-content bg-white p-8 rounded-2xl shadow-premium border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hidden text-left">
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-display font-extrabold text-2xl text-navyAccent">High Performance & Offroad SUVs
+                    </h3>
+                    <p class="text-slateDeep text-sm leading-relaxed">
+                        SUVs command tyres with thick, cut-resistant sidewalls, heavy carcass load structures, and wider
+                        circumferential grooves to prevent hydroplaning across wet gravel or mud sections.
+                    </p>
+                    <ul class="space-y-2 text-xs font-semibold text-slateDeep">
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Recommended Brands: Bridgestone
+                            Dueler, Michelin Primacy SUV, Apollo Apterra AT.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Crucial Benefits: Extreme
+                            ruggedness, puncture resistance, lateral shoulder block stability.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Optimal Applications: 70%
+                            Highway - 30% Offroad or complete All-Terrain configurations.</li>
+                    </ul>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20SUV%20Tyres%20pricing."
+                        target="_blank"
+                        class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-6 py-3.5 rounded-xl transition-all">Get
+                        Custom Recommendation</a>
+                </div>
+                <div class="lg:col-span-5">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Sierra/12271/1765181428462/front-left-side-47.jpg"
+                        alt="SUV Tyres" class="rounded-xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Tab 3: Sedans -->
+            <div id="tab-sedans"
+                class="vehicle-tab-content bg-white p-8 rounded-2xl shadow-premium border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hidden text-left">
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-display font-extrabold text-2xl text-navyAccent">Executive Luxury Sedans</h3>
+                    <p class="text-slateDeep text-sm leading-relaxed">
+                        Sedans benefit from high-traction, silent compound designs that maximize highway stability,
+                        improve responsive steering, and provide premium cabin isolation.
+                    </p>
+                    <ul class="space-y-2 text-xs font-semibold text-slateDeep">
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Recommended Brands: Michelin
+                            Primacy 4ST, Continental UltraContact, Yokohama BluEarth.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Crucial Benefits: Extremely low
+                            decibel noise levels, superior dry/wet straight-line braking.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Driving Profile: High-speed
+                            passenger comfort, optimized feedback from the tarmac.</li>
+                    </ul>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20inquiring%20about%20Premium%20Sedan%20Tyres."
+                        target="_blank"
+                        class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-6 py-3.5 rounded-xl transition-all">Get
+                        Custom Recommendation</a>
+                </div>
+                <div class="lg:col-span-5">
+                    <img src="https://www.revv.co.in/blogs/wp-content/uploads/2022/03/Sedan-cars-for-road-trips-in-India-1280x720.jpg"
+                        alt="Sedan Tyres" class="rounded-xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Tab 4: Hatchbacks -->
+            <div id="tab-hatchbacks"
+                class="vehicle-tab-content bg-white p-8 rounded-2xl shadow-premium border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hidden text-left">
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-display font-extrabold text-2xl text-navyAccent">Urban Compact Hatchbacks</h3>
+                    <p class="text-slateDeep text-sm leading-relaxed">
+                        Hatchbacks navigating tight urban roads require agile sidewall flexibility, excellent fuel
+                        mileage composites, and excellent durability over varying street patterns.
+                    </p>
+                    <ul class="space-y-2 text-xs font-semibold text-slateDeep">
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Recommended Brands: CEAT Milaze
+                            X3, JK Elan, Goodyear Assurance.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Crucial Benefits: Deep tread
+                            layouts, exceptionally high durability, outstanding budget value.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Usage Matrix: Ideal for
+                            high-frequency city commuting and bumper-to-bumper routes.</li>
+                    </ul>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20Hatchback%20Tyres%20deals."
+                        target="_blank"
+                        class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-6 py-3.5 rounded-xl transition-all">Get
+                        Custom Recommendation</a>
+                </div>
+                <div class="lg:col-span-5">
+                    <img src="https://spn-sta.spinny.com/blog/20221212163811/Best-premium-hatchback-cars-in-india-jpg.webp"
+                        alt="Hatchback Tyres" class="rounded-xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Tab 5: Luxury -->
+            <div id="tab-luxury"
+                class="vehicle-tab-content bg-white p-8 rounded-2xl shadow-premium border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hidden text-left">
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-display font-extrabold text-2xl text-navyAccent">Luxury Sports & Performance
+                        Vehicles</h3>
+                    <p class="text-slateDeep text-sm leading-relaxed">
+                        Sports platforms demand elite high-performance tyres. Engineered with asymmetrical tread
+                        patterns, these tyres maximize extreme lateral cornering load distribution.
+                    </p>
+                    <ul class="space-y-2 text-xs font-semibold text-slateDeep">
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Recommended Brands: Michelin
+                            Pilot Sport, Pirelli P-Zero, Continental SportContact.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Crucial Benefits: High heat
+                            dissipation, ultra-precise steering turn-in response.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Speed Index: Certified safe for
+                            elevated highway speeds and performance driving profiles.</li>
+                    </ul>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20Luxury%20Sports%20Tyres."
+                        target="_blank"
+                        class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-6 py-3.5 rounded-xl transition-all">Get
+                        Custom Recommendation</a>
+                </div>
+                <div class="lg:col-span-5">
+                    <img src="https://autobest.co.in/uploads/blog/273011572760.jpg" alt="Luxury Car Tyres"
+                        class="rounded-xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Tab 6: Commercial -->
+            <div id="tab-commercial"
+                class="vehicle-tab-content bg-white p-8 rounded-2xl shadow-premium border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hidden text-left">
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-display font-extrabold text-2xl text-navyAccent">Industrial Commercial Vehicles</h3>
+                    <p class="text-slateDeep text-sm leading-relaxed">
+                        Transport machinery demands structural safety, excellent mileage casing constructs, and
+                        heat-resistant compound designs.
+                    </p>
+                    <ul class="space-y-2 text-xs font-semibold text-slateDeep">
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Recommended Brands: MRF Steel
+                            Muscle, JK Jet R-Mile, Apollo EnduMax.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Crucial Benefits: Exceptional
+                            weight load bearing specs, multi-retread compound casings.</li>
+                        <li><i class="fa-solid fa-circle-check text-autoBlue mr-2"></i> Optimal Applications: Long
+                            distance logistic fleets, freight carriers, heavy industrial vehicles.</li>
+                    </ul>
+                    <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20inquiring%20about%20Commercial%20Fleet%20Tyres."
+                        target="_blank"
+                        class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-6 py-3.5 rounded-xl transition-all">Get
+                        Custom Recommendation</a>
+                </div>
+                <div class="lg:col-span-5">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2025/2/490655058/UQ/YT/UT/145462549/19ft-lcv-vehicle-transportation.jpg"
+                        alt="Commercial Fleet Tyres" class="rounded-xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5 — TYRE KNOWLEDGE HUB -->
+    <section id="hub" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Learn Tyre
+                    Science</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-navyAccent leading-tight">Tyre
+                    Knowledge Hub</h2>
+                <p class="text-slateDeep text-sm leading-relaxed mt-4">
+                    Selecting tyres requires an understanding of tread patterns and driving profiles. Read our expert
+                    educational guide designed to optimize your buying process.
+                </p>
+            </div>
+
+            <!-- SEO Content Grid of 10 Specific Tyre Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 text-left">
+                <!-- 1. Summer Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-sun"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Summer Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Engineered with premium hard compounds to resist heat, avoiding structural softening during hot
+                        northern summers in Uttar Pradesh. Provide high wet/dry handling.
+                    </p>
+                </div>
+                <!-- 2. All-Season Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">All-Season Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        A versatile hybrid tread design offering reliable grip throughout changing wet and dry seasonal
+                        temperatures. Perfect for balanced daily performance.
+                    </p>
+                </div>
+                <!-- 3. Highway Terrain (H/T) -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-road"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Highway Terrain</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Features tight tread-block configurations optimized for silent, low-vibration cruising. These
+                        tyres help maximize fuel economy and tire longevity on long routes.
+                    </p>
+                </div>
+                <!-- 4. All Terrain (A/T) -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-mountain"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">All Terrain</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Designed with wider, blocky tread voids that eject mud and gravel easily. Perfect for drivers
+                        who split time between city roads and off-road driving.
+                    </p>
+                </div>
+                <!-- 5. Performance Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-gauge-simple-high"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Performance Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Formulated with high-grip silica compounds that offer exceptional dry braking performance and
+                        precise steering responsiveness for sports cars.
+                    </p>
+                </div>
+                <!-- 6. Tubeless Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Tubeless Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Features integrated inner-liner air seals that prevent sudden blowouts during a puncture,
+                        allowing you to drive safely to a nearby repair workshop.
+                    </p>
+                </div>
+                <!-- 7. Radial Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-circle-notch"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Radial Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Constructed with steel belts laid perpendicular to the travel direction, offering superior
+                        sidewall flexibility and optimized contact with the road.
+                    </p>
+                </div>
+                <!-- 8. SUV Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-truck-monster"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">SUV Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Features reinforced carcass ply layers designed to support heavier vehicles, absorb rough road
+                        impacts, and handle high lateral weight transfers.
+                    </p>
+                </div>
+                <!-- 9. Long Life Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Long Life Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Formulated with high-durability polymer compounds to deliver extra high-mileage output, serving
+                        as an excellent budget-friendly commuter choice.
+                    </p>
+                </div>
+                <!-- 10. Fuel Efficient Tyres -->
+                <div
+                    class="bg-slateSoft border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
+                    <div class="text-autoBlue text-lg mb-4"><i class="fa-solid fa-leaf"></i></div>
+                    <h3 class="font-display font-extrabold text-navyAccent text-sm mb-2">Fuel Efficient Tyres</h3>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Engineered to minimize rolling resistance, reducing the energy needed to move and helping you
+                        get more mileage out of every liter of fuel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — ALLOY WHEELS & RIMS GUIDE -->
+    <section id="alloys" class="py-24 bg-slateSoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Visual Left Frame -->
+                <div class="lg:col-span-5 relative order-last lg:order-first">
+                    <div class="absolute -inset-2 bg-autoBlue/5 rounded-3xl filter blur-xl"></div>
+                    <div class="relative bg-white border border-slate-200 p-4 rounded-2xl shadow-xl">
+                        <img src="https://www.hottracks.in/wp-content/uploads/2021/09/kia-stinger-gt-wheels-tsw-silvano-gloss-black-rims-14-800X572.jpg"
+                            alt="Premium Alloy Wheels Closeup"
+                            class="w-full h-[400px] object-cover rounded-xl shadow-md">
+                    </div>
+                </div>
+
+                <!-- Text Right Alloy Guide Area -->
+                <div class="lg:col-span-7 space-y-8 text-left">
+                    <div>
+                        <span
+                            class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">High-Tensile
+                            Performance upgrades</span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navyAccent leading-tight">
+                            The Ultimate Guide to Premium Alloy Wheels & Rims
+                        </h2>
+                        <p class="text-slateDeep text-sm mt-4 leading-relaxed">
+                            Alloy wheels are cast or forged from aluminum and magnesium elements, making them lighter
+                            and stronger than traditional steel wheels.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Card 1 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200/50 shadow-sm">
+                            <h4 class="font-display font-bold text-navyAccent text-sm mb-2">Visual & Appearance Upgrades
+                            </h4>
+                            <p class="text-slateDeep text-xs leading-relaxed">
+                                Give your vehicle a premium look. Alloys allow for sleek, intricate multi-spoke patterns
+                                that elevate the aesthetic profile of any car.
+                            </p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200/50 shadow-sm">
+                            <h4 class="font-display font-bold text-navyAccent text-sm mb-2">Performance & Heat Control
+                            </h4>
+                            <p class="text-slateDeep text-xs leading-relaxed">
+                                Lighter weight reduces unsprung mass, improving steering responsiveness. Excellent heat
+                                dissipation also helps lower brake operating temperatures.
+                            </p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200/50 shadow-sm">
+                            <h4 class="font-display font-bold text-navyAccent text-sm mb-2">Why Size Choice Matters</h4>
+                            <p class="text-slateDeep text-xs leading-relaxed">
+                                Up-sizing your rims improves cornering stability but reduces tyre sidewall height. Our
+                                experts help ensure you find the perfect balanced setup.
+                            </p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200/50 shadow-sm">
+                            <h4 class="font-display font-bold text-navyAccent text-sm mb-2">Fuel Economy Benefits</h4>
+                            <p class="text-slateDeep text-xs leading-relaxed">
+                                Light alloy wheels require less energy to rotate, which can improve city fuel economy
+                                and reduce steering component strain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20an%20Alloy%20Wheels%20consultation."
+                            target="_blank"
+                            class="inline-flex bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-8 py-4 rounded-xl transition-all shadow-md shadow-autoBlue/10">
+                            Consult Alloys Experts Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 — WHY CUSTOMERS CHOOSE US -->
+    <section id="why-choose-us" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Our Core
+                    Commitments</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-navyAccent leading-tight">Why Drivers
+                    Choose Saluja</h2>
+                <p class="text-slateDeep text-sm leading-relaxed mt-4">
+                    Discover why we are Raebareli's preferred choice for premium tyres, precise computerized alignments,
+                    and trustworthy service recommendations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                <!-- Point 1 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">1,100+ Google Reviews</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Backed by a 4.9★ rating from over 1,100 satisfied local drivers, reflecting our commitment to
+                        honest service and quality.
+                    </p>
+                </div>
+                <!-- Point 2 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-award"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">100% Genuine Brands</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        We deal exclusively in factory-fresh, genuine inventory backed by direct official manufacturer
+                        warranties.
+                    </p>
+                </div>
+                <!-- Point 3 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-users-gear"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">Experienced Team</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Our technicians undergo regular training to handle everything from premium luxury cars to heavy
+                        off-road vehicles.
+                    </p>
+                </div>
+                <!-- Point 4 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-microchip"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">Latest Equipment</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        We utilize computerized 3D laser wheel alignment systems to deliver highly precise adjustments.
+                    </p>
+                </div>
+                <!-- Point 5 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-tag"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">Competitive Pricing</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Enjoy fair, transparent pricing on all premium tyre models, with no hidden alignment or
+                        balancing fees.
+                    </p>
+                </div>
+                <!-- Point 6 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">Fast 45-Min Service</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Our organized service bays allow us to complete tyre fittings, balancing, and alignment in under
+                        45 minutes.
+                    </p>
+                </div>
+                <!-- Point 7 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-face-smile"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">Customer Satisfaction</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        We prioritize customer satisfaction, offering honest recommendations tailored to your daily
+                        driving needs.
+                    </p>
+                </div>
+                <!-- Point 8 -->
+                <div class="premium-card p-8 rounded-2xl border border-slate-100">
+                    <div class="text-autoBlue text-2xl mb-5"><i class="fa-solid fa-medal"></i></div>
+                    <h4 class="font-display font-extrabold text-navyAccent text-base mb-2">Trusted Reputation</h4>
+                    <p class="text-slateDeep text-xs leading-relaxed">
+                        Over 20 years of trusted local service, establishing us as a highly reliable tire dealer in the
+                        region.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 — GOOGLE REVIEW SHOWCASE -->
+    <section id="reviews" class="py-24 bg-slateSoft relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 text-left">
+                <div>
+                    <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Verified
+                        Google Testimonials</span>
+                    <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-navyAccent">Verified Customer
+                        Reviews</h2>
+                </div>
+                <!-- Floating metrics score badge -->
+                <div
+                    class="mt-6 md:mt-0 bg-white border border-slate-200 p-5 rounded-2xl shadow-sm flex items-center space-x-4">
+                    <div class="text-center">
+                        <span class="font-display text-3xl font-extrabold text-navyAccent">4.9</span>
+                        <span class="text-slateDeep text-[10px] block font-bold uppercase tracking-wider">OUT OF
+                            5★</span>
+                    </div>
+                    <div class="h-10 w-[1px] bg-slate-200"></div>
+                    <div>
+                        <div class="text-amber-500 text-xs flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star ml-0.5"></i>
+                            <i class="fa-solid fa-star ml-0.5"></i>
+                            <i class="fa-solid fa-star ml-0.5"></i>
+                            <i class="fa-solid fa-star ml-0.5"></i>
+                        </div>
+                        <span class="text-xs font-bold text-navyAccent block mt-1">1100+ Verified Ratings</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Review 1 -->
+                <div class="bg-white border border-slate-200/60 p-8 rounded-2xl shadow-sm relative">
+                    <div class="text-amber-500 text-xs mb-4 flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                    </div>
+                    <p class="text-slateDeep text-xs leading-relaxed italic mb-6">
+                        "Easily the most professional and trustworthy tyre shop in Raebareli. I brought my luxury car
+                        for 3D alignment. The technicians explained everything clearly using digital display graphs.
+                        Exceptionally transparent!"
+                    </p>
+                    <div class="flex items-center space-x-3.5 pt-4 border-t border-slate-50">
+                        <div
+                            class="h-10 w-10 rounded-full bg-autoBlue text-white flex items-center justify-center font-bold text-xs">
+                            AS
+                        </div>
+                        <div>
+                            <h4 class="font-display font-extrabold text-navyAccent text-xs">Abhishek Singh</h4>
+                            <p class="text-[9px] text-slateDeep uppercase tracking-wider font-semibold">Premium Car
+                                Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white border border-slate-200/60 p-8 rounded-2xl shadow-sm relative">
+                    <div class="text-amber-500 text-xs mb-4 flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                    </div>
+                    <p class="text-slateDeep text-xs leading-relaxed italic mb-6">
+                        "Got Michelin tyres installed on my SUV. Excellent prices and honest suggestions. The alignment
+                        and balancing were done quickly using professional equipment. Highly recommended!"
+                    </p>
+                    <div class="flex items-center space-x-3.5 pt-4 border-t border-slate-50">
+                        <div
+                            class="h-10 w-10 rounded-full bg-autoBlue text-white flex items-center justify-center font-bold text-xs">
+                            KM
+                        </div>
+                        <div>
+                            <h4 class="font-display font-extrabold text-navyAccent text-xs">Kartikeya Mishra</h4>
+                            <p class="text-[9px] text-slateDeep uppercase tracking-wider font-semibold">SUV Driver,
+                                Raebareli</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white border border-slate-200/60 p-8 rounded-2xl shadow-sm relative">
+                    <div class="text-amber-500 text-xs mb-4 flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                        <i class="fa-solid fa-star ml-0.5"></i>
+                    </div>
+                    <p class="text-slateDeep text-xs leading-relaxed italic mb-6">
+                        "Excellent customer service and genuine company tyre stocks. They helped resolve a steering
+                        vibration issue on my sedan that other shops couldn't fix. The balancing here is highly
+                        precise."
+                    </p>
+                    <div class="flex items-center space-x-3.5 pt-4 border-t border-slate-50">
+                        <div
+                            class="h-10 w-10 rounded-full bg-autoBlue text-white flex items-center justify-center font-bold text-xs">
+                            RP
+                        </div>
+                        <div>
+                            <h4 class="font-display font-extrabold text-navyAccent text-xs">Rajesh Pandey</h4>
+                            <p class="text-[9px] text-slateDeep uppercase tracking-wider font-semibold">Sedan Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9 — GALLERY -->
+    <section id="gallery" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Our Operations
+                    & Facility</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-navyAccent leading-tight">Our Gallery
+                </h2>
+                <p class="text-slateDeep text-sm leading-relaxed mt-4">
+                    Take an inside look at our modern workshop layout, premium tire displays, digital alignment systems,
+                    and dedicated staff at work.
+                </p>
+            </div>
+
+            <!-- Responsive Gallery Masonry Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                <!-- Shop Exterior -->
+                <div class="relative rounded-2xl overflow-hidden border border-slate-100 h-80 group shadow-sm">
+                    <img src="assets/1.webp" alt="Saluja Tyre House Showroom Exterior"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navyAccent/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                        <p class="text-xs font-display font-bold text-white uppercase tracking-wider">Premium Showroom
+                            Layout</p>
+                        <p class="text-[10px] text-slate-300">Fresh stock from leading brands, ready for installation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tyre Display -->
+                <div class="relative rounded-2xl overflow-hidden border border-slate-100 h-80 group shadow-sm">
+                    <img src="assets/2.webp" alt="Tyre stock selection on display"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navyAccent/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                        <p class="text-xs font-display font-bold text-white uppercase tracking-wider">Genuine Tyre
+                            Inventory</p>
+                        <p class="text-[10px] text-slate-300">Fresh company batches with authentic barcodes.</p>
+                    </div>
+                </div>
+
+                <!-- Wheel Alignment Equipment -->
+                <div class="relative rounded-2xl overflow-hidden border border-slate-100 h-80 group shadow-sm">
+                    <img src="assets/3.jpg" alt="Precision alignment equipment"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navyAccent/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                        <p class="text-xs font-display font-bold text-white uppercase tracking-wider">3D Alignment Bays
+                        </p>
+                        <p class="text-[10px] text-slate-300">Precise adjustments using computerized diagnostics.</p>
+                    </div>
+                </div>
+
+                <!-- Customer Vehicles -->
+                <div
+                    class="relative rounded-2xl overflow-hidden border border-slate-100 h-80 group shadow-sm lg:col-span-2">
+                    <img src="assets/4.webp" alt="Luxury Sedan Service"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navyAccent/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                        <p class="text-xs font-display font-bold text-white uppercase tracking-wider">Premium Customer
+                            Vehicles</p>
+                        <p class="text-[10px] text-slate-300">Dedicated bays equipped for luxury sedans and off-road
+                            SUVs.</p>
+                    </div>
+                </div>
+
+                <!-- Service Area / Nitrogen Staff At Work -->
+                <div class="relative rounded-2xl overflow-hidden border border-slate-100 h-80 group shadow-sm">
+                    <img src="assets/5.jpg" alt="Automotive nitrogen filling station"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navyAccent/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                        <p class="text-xs font-display font-bold text-white uppercase tracking-wider">Certified Service
+                            Bays</p>
+                        <p class="text-[10px] text-slate-300">Fast, reliable fittings by experienced technicians.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO CONTENT REINFORCEMENT PANEL -->
+    <section class="py-24 bg-slateSoft relative border-y border-slate-200/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-white p-8 sm:p-12 rounded-2xl border border-slate-200/60 shadow-premium space-y-10 text-left">
+                <div class="border-b border-slate-100 pb-8">
+                    <span class="text-xs font-extrabold text-autoBlue uppercase tracking-widest block mb-2">Raebareli
+                        Local SEO Hub</span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-navyAccent leading-tight">Your
+                        Trusted Local Tyre Dealer</h2>
+                    <p class="text-slateDeep text-sm mt-3 leading-relaxed">
+                        Strategically located in Feroz Gandhi Nagar, Saluja Tyre House is Raebareli's recognized choice
+                        for premium automotive tyres and wheel care. Over the last 20+ years, we have built a reputation
+                        based on uncompromising authenticity.
+                    </p>
+                </div>
+
+                <!-- SEO rich topics block -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs leading-relaxed text-slateDeep">
+                    <div class="space-y-3">
+                        <h4 class="font-display font-bold text-navyAccent text-sm">Authorized Bridgestone Dealer in
+                            Raebareli</h4>
+                        <p>
+                            We stock direct company batches of premium comfort and mileage-focused passenger lines such
+                            as Bridgestone Sturdo and Dueler series. Skip unauthorized intermediaries and purchase with
+                            certified barcode safety.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-display font-bold text-navyAccent text-sm">Precision Wheel Alignment & Balancing
+                        </h4>
+                        <p>
+                            Uneven tyre treadwear, lane drifting, and high-speed dashboard rattles are directly
+                            mitigated at our workshop. Our technicians calibrate steering axes with absolute millimeter
+                            precision.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-display font-bold text-navyAccent text-sm">World Class SUV & Car Tyres</h4>
+                        <p>
+                            From ultra-comfort city runabouts to high-traction off-road luxury SUV segments, our experts
+                            determine correct speed and load-index specifications according to manufacturing protocols.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-display font-bold text-navyAccent text-sm">Professional Tyre Replacement Shop
+                        </h4>
+                        <p>
+                            Utilizing automatic pneumatic tire changers, we mount runflat and standard tires on premium
+                            alloy rims with zero friction, protecting standard wheel contours completely.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-slate-100 text-center flex flex-wrap justify-center gap-3">
+                    <span
+                        class="bg-slateSoft border border-slate-200 px-3.5 py-2 rounded-xl text-[10px] text-navyAccent font-bold">Tyre
+                        Shop in Raebareli</span>
+                    <span
+                        class="bg-slateSoft border border-slate-200 px-3.5 py-2 rounded-xl text-[10px] text-navyAccent font-bold">Best
+                        Tyre Dealer in Raebareli</span>
+                    <span
+                        class="bg-slateSoft border border-slate-200 px-3.5 py-2 rounded-xl text-[10px] text-navyAccent font-bold">Wheel
+                        Alignment Raebareli</span>
+                    <span
+                        class="bg-slateSoft border border-slate-200 px-3.5 py-2 rounded-xl text-[10px] text-navyAccent font-bold">Bridgestone
+                        Dealer Raebareli</span>
+                    <span
+                        class="bg-slateSoft border border-slate-200 px-3.5 py-2 rounded-xl text-[10px] text-navyAccent font-bold">Alloy
+                        Wheels Raebareli</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10 — LOCATION & CONTACT -->
+    <section id="contact" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start text-left">
+
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-extrabold text-autoBlue uppercase tracking-[0.2em] block mb-3">Visit
+                            Our Workshop</span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navyAccent leading-tight">Ready
+                            for a Smoother Ride?</h2>
+                        <p class="text-slateDeep text-sm leading-relaxed mt-4">
+                            No appointment forms or delayed email queues. Contact our service desk directly or click
+                            below to message us live on WhatsApp.
+                        </p>
+                    </div>
+
+                    <!-- Direct contact details cards -->
+                    <div class="space-y-6">
+                        <!-- Card 1 -->
+                        <div class="flex items-start space-x-4 p-5 bg-slateSoft rounded-2xl border border-slate-100">
+                            <div
+                                class="h-10 w-10 bg-autoBlueLight text-autoBlue rounded-xl flex items-center justify-center text-sm">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-extrabold text-navyAccent text-sm">Workshop Address</h4>
+                                <p class="text-slateDeep text-xs leading-normal mt-1 max-w-xs">
+                                    Hari Kripa Tower, BSNL Office Road, beside Rajasthan Sweets, Feroz Gandhi Nagar,
+                                    Raebareli, Uttar Pradesh 229001
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="flex items-start space-x-4 p-5 bg-slateSoft rounded-2xl border border-slate-100">
+                            <div
+                                class="h-10 w-10 bg-autoBlueLight text-autoBlue rounded-xl flex items-center justify-center text-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-extrabold text-navyAccent text-sm">Direct Phone Line</h4>
+                                <p class="text-slateDeep text-xs mt-1">
+                                    <a href="tel:+919415155394"
+                                        class="text-autoBlue hover:underline font-bold text-sm">+91 94151 55394</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="flex items-start space-x-4 p-5 bg-slateSoft rounded-2xl border border-slate-100">
+                            <div
+                                class="h-10 w-10 bg-autoBlueLight text-autoBlue rounded-xl flex items-center justify-center text-sm">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-extrabold text-navyAccent text-sm">Business Operating Hours
+                                </h4>
+                                <p class="text-slateDeep text-xs leading-normal mt-1">
+                                    Monday – Saturday: 09:30 AM to 08:00 PM <br>
+                                    <span
+                                        class="text-rose-600 font-semibold tracking-wide text-[10px] uppercase block mt-1">Tuesday:
+                                        Closed</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google map display area -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="p-8 bg-slateSoft border border-slate-100 rounded-2xl text-center space-y-6 shadow-sm">
+                        <div class="bg-autoBlue text-white inline-flex p-4 rounded-xl text-xl">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-extrabold text-navyAccent">Find Genuine Tyres Instantly
+                        </h3>
+                        <p class="text-slateDeep text-xs leading-relaxed max-w-md mx-auto">
+                            Share your vehicle model and required tyre size. Our team will check stock availability and
+                            send pricing details directly on WhatsApp.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20for%20premium%20tyres/services%20for%20my%20vehicle."
+                                target="_blank"
+                                class="bg-autoBlue hover:bg-navyDark text-white font-display text-xs uppercase tracking-wider font-extrabold px-8 py-4 rounded-xl transition-all flex items-center justify-center space-x-2 shadow-md shadow-autoBlue/10">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>Inquire on WhatsApp</span>
+                            </a>
+                            <a href="tel:+919415155394"
+                                class="bg-white hover:bg-slateSoft border border-slate-200 text-navyAccent font-display text-xs uppercase tracking-wider font-extrabold px-8 py-4 rounded-xl transition-all flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-phone text-autoBlue mr-1"></i>
+                                <span>Call Direct Desk</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Clean Interactive Google Map Embed -->
+                    <div class="rounded-2xl overflow-hidden border border-slate-200 h-[320px] relative shadow-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.4284693994784!2d81.2427!3d26.2235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDEzJzI0LjYiTiA4McKwMTQnMzMuNyJF!5e0!3m2!1sen!2sin!4v1622350000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            title="Saluja Tyre House Google Map Coordinates Location">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+    <footer class="bg-navyAccent text-white pt-16 pb-10 border-t border-slate-800 relative z-10 text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                <!-- Brand information segment -->
+                <div class="space-y-5">
+                    <a href="#hero" class="flex items-center space-x-3 group">
+                        <div
+                            class="bg-autoBlue h-11 w-11 rounded-xl flex items-center justify-center transition-transform group-hover:scale-105">
+                            <i class="fa-solid fa-circle-nodes text-lg text-white"></i>
+                        </div>
+                        <div>
+                            <span
+                                class="font-display text-lg font-extrabold tracking-tight block text-white leading-none">SALUJA</span>
+                            <span
+                                class="text-[9px] uppercase tracking-[0.25em] text-autoBlue font-black block mt-0.5">TYRE
+                                HOUSE</span>
+                        </div>
+                    </a>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Raebareli's recognized premier computerized wheel diagnostics center and direct authorized tyre
+                        sales destination. Committed to safety, road longevity, and dynamic balancing legacy since 20+
+                        years.
+                    </p>
+                    <div class="flex items-center space-x-2 text-[10px] font-bold text-amber-500">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-white">4.9 Star Rating (1100+ Reviews)</span>
+                    </div>
+                </div>
+
+                <!-- Internal Links segment -->
+                <div class="space-y-4">
+                    <h4 class="font-display font-extrabold text-xs uppercase tracking-widest text-white">Quick
+                        Navigation</h4>
+                    <ul class="space-y-2.5 text-xs font-semibold text-slate-300">
+                        <li><a href="#about" class="hover:text-autoBlue transition-colors">Our Story</a></li>
+                        <li><a href="#services" class="hover:text-autoBlue transition-colors">Specialist Services</a>
+                        </li>
+                        <li><a href="#vehicles" class="hover:text-autoBlue transition-colors">Explore Tyres By
+                                Vehicle</a></li>
+                        <li><a href="#hub" class="hover:text-autoBlue transition-colors">Knowledge Hub</a></li>
+                        <li><a href="#alloys" class="hover:text-autoBlue transition-colors">Alloy Wheels Guide</a></li>
+                        <li><a href="#why-choose-us" class="hover:text-autoBlue transition-colors">Why Choose Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Local services directories -->
+                <div class="space-y-4">
+                    <h4 class="font-display font-extrabold text-xs uppercase tracking-widest text-white">Our Services
+                    </h4>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><i class="fa-solid fa-chevron-right text-autoBlue mr-2 text-[8px]"></i> <span
+                                class="hover:text-white transition-colors">Tyre Shop in Raebareli</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-autoBlue mr-2 text-[8px]"></i> <span
+                                class="hover:text-white transition-colors">Best Tyre Dealer in Raebareli</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-autoBlue mr-2 text-[8px]"></i> <span
+                                class="hover:text-white transition-colors">3D Wheel Alignment Raebareli</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-autoBlue mr-2 text-[8px]"></i> <span
+                                class="hover:text-white transition-colors">Bridgestone Dealer Raebareli</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-autoBlue mr-2 text-[8px]"></i> <span
+                                class="hover:text-white transition-colors">Premium SUV Car Tyres</span></li>
+                    </ul>
+                </div>
+
+                <!-- Live address details -->
+                <div class="space-y-4">
+                    <h4 class="font-display font-extrabold text-xs uppercase tracking-widest text-white">Location
+                        Details</h4>
+                    <p class="text-xs text-slate-300 leading-normal">
+                        Hari Kripa Tower, BSNL Office Road, Beside Rajasthan Sweets, Feroz Gandhi Nagar, Raebareli, UP
+                        229001
+                    </p>
+                    <p class="text-xs text-slate-300 leading-normal">
+                        Call Desk: <strong class="text-white">+91 94151 55394</strong>
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House" target="_blank"
+                            class="inline-flex items-center space-x-2 bg-autoBlue hover:bg-navyDark text-white font-display text-[10px] uppercase tracking-wider font-extrabold py-2.5 px-4 rounded-xl transition-all shadow-md shadow-autoBlue/15">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat Live</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer baseline -->
+            <div
+                class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 font-semibold space-y-4 sm:space-y-0">
+                <p>© 2026 Saluja Tyre House. All Rights Reserved. Raebareli, UP, India.</p>
+                <div class="flex space-x-6">
+                    <a href="#about" class="hover:text-white transition-colors">Privacy Terms</a>
+                    <a href="#services" class="hover:text-white transition-colors">Guidelines</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Local Directory</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY ACTION BUTTONS FOR MOBILE & DESKTOP DESKS -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+        <!-- Phone CTA -->
+        <a href="tel:+919415155394"
+            class="bg-white hover:bg-slateSoft text-navyAccent h-12 w-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-all border border-slate-200 relative group"
+            aria-label="Call Saluja Tyre House">
+            <i class="fa-solid fa-phone text-sm text-autoBlue"></i>
+            <span
+                class="absolute right-14 bg-white text-navyAccent text-[10px] uppercase tracking-widest font-bold py-1.5 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap border border-slate-150 shadow-sm">Call
+                Direct Desk</span>
+        </a>
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20visiting%20the%20website%20and%20want%20to%20enquire."
+            target="_blank"
+            class="bg-green-600 hover:bg-green-700 text-white h-12 w-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-all relative group"
+            aria-label="WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span
+                class="absolute right-14 bg-green-600 text-white text-[10px] uppercase tracking-widest font-bold py-1.5 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-sm">Chat
+                WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- MOBILE STICKY BOTTOM BAR FOR IMMEDIATE CTR ENHANCEMENT -->
+    <div
+        class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 grid grid-cols-2 shadow-xl">
+        <a href="tel:+919415155394"
+            class="py-3 bg-white text-navyAccent text-center font-display text-xs uppercase tracking-wider font-extrabold flex items-center justify-center space-x-2 border-r border-slate-100 hover:bg-slateSoft">
+            <i class="fa-solid fa-phone text-autoBlue"></i>
+            <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/919415155394?text=Hi%20Saluja%20Tyre%20House,%20I'm%20looking%20to%20enquire%20about%20your%20services."
+            target="_blank"
+            class="py-3 bg-autoBlue text-white text-center font-display text-xs uppercase tracking-wider font-extrabold flex items-center justify-center space-x-2 hover:bg-navyDark">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- WEB INTERACTION LOGIC & DYNAMIC STATE CONTROL -->
+    <script>
+        // Responsive Mobile Menu Drawer Controls
+        const mobileToggleBtn = document.getElementById('mobile-toggle');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const menuBurgerIcon = document.getElementById('menu-burger');
+
+        mobileToggleBtn.addEventListener('click', () => {
+            const isMenuClosed = mobileDrawer.classList.contains('hidden');
+            if (isMenuClosed) {
+                mobileDrawer.classList.remove('hidden');
+                menuBurgerIcon.classList.remove('fa-bars-staggered');
+                menuBurgerIcon.classList.add('fa-xmark');
+            } else {
+                mobileDrawer.classList.add('hidden');
+                menuBurgerIcon.classList.remove('fa-xmark');
+                menuBurgerIcon.classList.add('fa-bars-staggered');
+            }
+        });
+
+        function toggleMobileDrawer() {
+            mobileDrawer.classList.add('hidden');
+            menuBurgerIcon.classList.remove('fa-xmark');
+            menuBurgerIcon.classList.add('fa-bars-staggered');
+        }
+
+        // Cinematic Navigation Scroll Controller
+        window.addEventListener('scroll', () => {
+            const headerElement = document.getElementById('navbar');
+            const navPhoneLink = document.getElementById('nav-phone-link');
+
+            if (window.scrollY > 80) {
+                // Return to solid glass look with dark typography once leaving the video block
+                headerElement.classList.remove('transparent');
+                headerElement.classList.add('shadow-md', 'py-1');
+
+                // Adjust typography classes dynamically to maintain contrast against standard backgrounds
+                navPhoneLink.classList.remove('text-white');
+                navPhoneLink.classList.add('text-navyAccent');
+
+                // Set burger icon to navy
+                mobileToggleBtn.classList.remove('text-white');
+                mobileToggleBtn.classList.add('text-navyAccent');
+            } else {
+                // Revert to transparent white-on-video cinematic overlay style
+                headerElement.classList.add('transparent');
+                headerElement.classList.remove('shadow-md', 'py-1');
+
+                navPhoneLink.classList.remove('text-navyAccent');
+                navPhoneLink.classList.add('text-white');
+
+                mobileToggleBtn.classList.remove('text-navyAccent');
+                mobileToggleBtn.classList.add('text-white');
+            }
+        });
+
+        // Immersive Cinematic Video Player Control Mechanism
+        const openCinematicTrigger = document.getElementById('open-cinematic-trigger');
+        const closeCinematicTrigger = document.getElementById('close-cinematic-trigger');
+        const cinematicModal = document.getElementById('cinematic-modal');
+        const cinematicPlayer = document.getElementById('cinematic-player');
+        const bgLoopVideo = document.getElementById('bg-loop-video');
+
+        // Opening Fullscreen Modal with Audio & Theater Atmosphere
+        openCinematicTrigger.addEventListener('click', () => {
+            // Unhide modal smoothly
+            cinematicModal.classList.remove('opacity-0', 'pointer-events-none');
+
+            // Fade loop background audio slightly if active, pause background loop if necessary
+            if (bgLoopVideo) {
+                bgLoopVideo.pause();
+            }
+
+            // Play the dynamic cinematic feature with sounds active
+            cinematicPlayer.currentTime = 0;
+            cinematicPlayer.play();
+        });
+
+        // Closing the player and restoring back-loop mechanics
+        const exitCinematicTheaterMode = () => {
+            cinematicModal.classList.add('opacity-0', 'pointer-events-none');
+
+            // Pause theater player immediately
+            cinematicPlayer.pause();
+
+            // Resume smooth cinematic background layout b-roll
+            if (bgLoopVideo) {
+                bgLoopVideo.play();
+            }
+        };
+
+        closeCinematicTrigger.addEventListener('click', exitCinematicTheaterMode);
+
+        // Escape key support to exit theater mode
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !cinematicModal.classList.contains('opacity-0')) {
+                exitCinematicTheaterMode();
+            }
+        });
+
+        // Interactive Vehicle tab panels switcher mechanics
+        function switchVehicleTab(selectedTabId) {
+            // Hide all tab contents
+            const allTabsContents = document.querySelectorAll('.vehicle-tab-content');
+            allTabsContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Show selected active tab content
+            document.getElementById(selectedTabId).classList.remove('hidden');
+
+            // Reset style states of all buttons
+            const allTabBtns = document.querySelectorAll('.vehicle-tab-btn');
+            allTabBtns.forEach(btn => {
+                btn.classList.remove('text-autoBlue', 'border-autoBlue', 'shadow-sm', 'active-tab');
+                btn.classList.add('text-slateDeep');
+            });
+
+            // Activate chosen button highlight design state
+            const targetBtnId = 'btn-' + selectedTabId;
+            const targetBtn = document.getElementById(targetBtnId);
+            if (targetBtn) {
+                targetBtn.classList.remove('text-slateDeep');
+                targetBtn.classList.add('text-autoBlue', 'border-autoBlue', 'shadow-sm', 'active-tab');
+            }
+        }
+
+        // Interactive Tyre Finder Custom Logic Redirection
+        function triggerTyreFinderInquiry() {
+            const selectedVehicle = document.getElementById('finder-vehicle').value;
+            const selectedBrand = document.getElementById('finder-brand').value;
+            const selectedRim = document.getElementById('finder-rim').value;
+
+            // Generate custom pre-filled message URL
+            const customizedMessage = `Hi Saluja Tyre House, I visited your website and would like to check the availability and price for ${selectedBrand} tyres for my ${selectedVehicle} (Rim size: R${selectedRim}).`;
+            const encodedString = encodeURIComponent(customizedMessage);
+            const redirectUrl = `https://wa.me/919415155394?text=${encodedString}`;
+
+            // Redirect smoothly to WhatsApp API
+            window.open(redirectUrl, '_blank');
+        }
+    </script>
+</body>
+
+</html>
